@@ -1,0 +1,49 @@
+body {
+    background-color: antiquewhite;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: top; /* Center horizontally */
+    height: calc(100vh + 230px);
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack items vertically */
+    position: relative; /* Position for absolute positioning of .copyright */
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-top: -30px;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 10px; /* 10px gap between cells vertically */
+}
+
+td {
+    text-align: left; /* Align content to the left within each cell */
+}
+
+/* Position copyright text at the bottom left */
+.copyright {
+    font-size: 1.3rem;
+    margin-top: auto; /* Pushes the element to the bottom */
+    margin-bottom: 30px; /* Provides some space between the text and bottom */
+    margin-left: 10px; /* Provides some space between the text and left */
+    color: gray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

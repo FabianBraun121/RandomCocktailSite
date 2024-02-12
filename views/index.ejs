@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <title>RandomDrinkGenerator</title>
+</head>
+<body>
+    <h1><%= drinkName %></h1>
+    <h3><%= drinkCategory %></h3>
+    <img src=<%= imageRef %> alt="Image of a <%= drinkName %>">
+    <h2>Instructions:</h2>
+    <p><%= instructions %></p>
+    <h2>ingredients:</h2>
+    <table>
+        <% for (let ingredient of ingredients) { %>
+            <tr>
+                <th class="ingredient"><%= ingredient.ingredient %></th>
+                <th class="measure"><%= ingredient.measure %></th>
+            </tr>
+        <% } %>
+    </table>
+
+    <p class="copyright">© FabianBraun</p>
+</body>
+</html>
